@@ -5,7 +5,6 @@ import java.util.Random;
 public class CarFeature {
 
     Car car;
-    int distance;
 
     public CarFeature(Car car) {
         this.car = car;
@@ -18,7 +17,7 @@ public class CarFeature {
         int randNum = rand.nextInt(10);
 
         if(randNum >= 4) {
-            distance += 1;
+            car.distance += 1;
         }
     }
 }
